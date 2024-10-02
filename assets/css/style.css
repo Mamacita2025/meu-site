@@ -1,0 +1,80 @@
+/**
+    * Projeto atualizado v1.1.0, Angola-2-11-2024
+    * Autor: Luis Gomes
+    * Email: luisgomes.09a@hotmail.com
+*/
+
+/* Selecao das cores principais  */
+:root{
+    --primary-color: #234524;
+    --terceary-color: #e7e6e6;
+    --heading-color: #012970;
+    --accent-color: #4154f1;
+}
+
+/* Cores para os textos */
+:root{
+    --primary-text-color: #fff;
+    --secondary-text-color: #666666;
+}
+
+/* EScolhendo as melhores Fontes */
+:root{
+    --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Nunito",  sans-serif;
+    --nav-font: "Poppins",  sans-serif;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+} 
+
+/* Estilizando conponentes do header  */
+/* primeira div  */
+.div-h-1{
+    background-color: var(--primary-color);
+    padding: 15px;
+    color: var(--primary-text-color);
+    font-family: var(--nav-font);
+}
+.div-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* segunda div  */
+.div-h-2{
+    background-color: var(--terceary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.div-h-2 nav ul {
+    display: flex;
+    justify-content: center;
+    font-family: var(--nav-font);
+}
+.div-h-2 nav {
+    padding: 10px ;
+}
+.div-h-2 nav ul li {
+    list-style-type: none;
+    margin: 6px 13px;
+}
+.div-h-2 nav ul li a{
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+}
+.apoio{
+    text-decoration: none;
+    background-color: var(--heading-color);
+    color: var(--primary-text-color);
+    margin-left: 15px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    letter-spacing: .2em;
+}
