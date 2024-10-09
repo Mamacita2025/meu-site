@@ -18,6 +18,7 @@
     --primary-text-color: #fff;
     --secondary-text-color: #666666;
     --terceary-text-color: #333333;
+    --optional-text-color: #888888;
 }
 
 /* EScolhendo as melhores Fontes */
@@ -54,23 +55,11 @@
 /* Estilizando conponentes do header  */
 
 /* segunda div  */
-.luisGomes{
-    display: none;
-}
 .slogan{
     color: var(--primary-text-color);
     font-weight: 800;
     letter-spacing: 1px;
     font-size: 18px;
-}
-@media screen and (max-width:1168px){
-    .slogan{
-       display: none; 
-    }
-    .luisGomes{
-        display: block;
-    }
-    
 }
 .mainNav{
     width: 100%;
@@ -560,4 +549,99 @@ section{
     100% {
         transform: translateY(-10px);
     }
+}
+
+/* Estilizando a section solut_resolv  */
+.solut_resolv{
+    background-color: var(--accent-color);
+    padding: 2.8em 0;
+}
+.solut_resolvArticle .solut_title h1{
+    font-size: 30px;
+    margin-bottom: 35px;
+    border-bottom: 5px solid var(--primary-color);
+    padding-bottom: 8px;
+    display: inline-block;
+}
+.solut_resolvArticle .solut_subtitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.solut_resolvArticle .solut_subtitle span{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 3em;
+    margin-right: 10px;
+}
+.solut_resolvArticle .solut_subtitle p{
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+.solut_resolvArticle .solut_text h3{
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+.solut_resolvArticle .solut_text .text-1{
+    color: var(--optional-text-color);
+    margin-bottom: 23px;
+}
+.solut_resolvArticle .solut_text .text-2{
+    color: var(--optional-text-color);
+    margin-bottom: 20px;
+}
+.solut_resolvArticle .solut_text .text-3{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Seccao Equip  */
+.equip{
+    margin: 198px 0;
+}
+
+.equip-imgInfo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.equipImg{
+    position: relative;
+}
+.equipImg{
+    bottom: 0;
+}
+.equipInfo{
+    position: absolute;
+    left: 40%;
+    bottom: -25%;
+    background-color: var(--primary-text-color);
+    max-width: 400px;
+    border-left: 5px solid var(--primary-color);
+    box-shadow: 8px 2px 30px 0.2rem rgba(109, 108, 108, 0.2);
+    border-radius: 10px;
+    padding: 30px 20px;
+    margin: 20px;
+}
+.equipInfo h2{
+    letter-spacing: 1px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    color: var(--secondary-text-color);
+}
+.equipInfo p{
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.equipInfo span{
+    display: block;
+    margin-top: 30px;
+    color: var(--secondary-text-color);
+}
+.equipInfo button{
+    border-radius: 30px;
+    border: 2px solid var(--primary-color);
+    color: var(--secondary-text-color);
 }
