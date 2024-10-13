@@ -60,6 +60,32 @@
     font-weight: 800;
     letter-spacing: 1px;
     font-size: 18px;
+    display: flex;
+}
+.btnEntrar{
+    padding: 12px 19px;
+    background-color: transparent;
+    border: 1px solid rgba(99, 116, 152, 0.4);
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-right: 12px;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px rgba(99, 116, 152, 0.2);
+    transition: all 0.4s ease;
+}
+.btnCadastrar{
+    padding: 12px 19px;
+    background-color: transparent;
+    border: 1px solid rgba(99, 116, 152, 0.4);
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px rgba(99, 116, 152, 0.2);
+    transition: all 0.4s ease;
 }
 .mainNav{
     width: 100%;
@@ -87,7 +113,7 @@
     padding: 10px ;
     display: flex;
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1100px) {
     .mainNav_links{
         display: none;
     }
@@ -311,6 +337,7 @@
     letter-spacing: .2em;
     font-size: 14px;
     transform: translateY(-5px);
+    word-wrap: nowrap;
 }
 .apoio:hover{
     background-color: var(--terceary-text-color);
@@ -485,6 +512,7 @@ section{
 .hero_img img{
     width: inherit !important;
 }
+
 @media screen and (max-width: 992px){
     .hero_msm, .hero_title, .hero-text, .hero_starter form, .hero-suport {
         margin-bottom: 19px;
@@ -495,6 +523,13 @@ section{
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-fluid{
+    width: 100%;
+    padding-left: 115px;
+    padding-right: 115px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -608,10 +643,17 @@ section{
 }
 .equipImg{
     position: relative;
-}
-.equipImg{
     bottom: 0;
 }
+.equipImg img{
+    border-radius: 5px;
+}
+@media screen and (max-width: 850px){
+    .equipImg img{
+        width: 100%;
+    }
+}
+
 .equipInfo{
     position: absolute;
     left: 40%;
@@ -623,6 +665,20 @@ section{
     border-radius: 10px;
     padding: 30px 20px;
     margin: 20px;
+}
+@media screen and (max-width: 767px){
+    .equipInfo{
+        left: 0;
+        width: 550px;
+        bottom: -65%;
+    }
+}
+@media screen and (max-width: 435px){
+    .equipInfo{
+        left: 0;
+        width: 300px;
+        bottom: -95%;
+    }
 }
 .equipInfo h2{
     letter-spacing: 1px;
@@ -645,3 +701,275 @@ section{
     border: 2px solid var(--primary-color);
     color: var(--secondary-text-color);
 }
+
+
+/* estilizacao da section proj  */
+.projSection{
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+.proj{
+    width: 100%;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+.proj .projH1{
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+.proj .projP{
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.proj .projP2{
+    color: var(--secondary-color);
+}
+
+
+/* estilizacao da seccao sobre sites  */
+.sobreSite{
+    padding-top: 100px;
+    width: 100%;
+}
+.projSites{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobreSite-text{
+    width: 800px;
+}
+.siteBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5;
+}
+.siteBox-1{
+    margin: 16px;
+    max-width: 500px;
+}
+.siteBoximg{
+    max-width: 390px;
+    max-height: 280px;
+}
+.siteBoximg-text{
+    width: 100%;
+    height: 100%;
+}
+.siteBoximg-text img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.siteImg{
+    margin-bottom: 30px;
+}
+.siteImg-2{
+    margin: 20px 0px 0px 20px;
+}
+.sobreSite .sobreSite-text h5 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    padding: 10px 20px;
+    background-color: color-mix(in srgb, var(--primary-color), transparent 95%);
+    color: var(--primary-color);
+    border-radius: 7px;
+    display: inline-block;
+}
+.sobreSite .sobreSite-text h2{
+    font-weight: 700;
+    margin-bottom: 35px;
+    color: var(--primary-color);
+}
+.sobreSite .sobreSite-text p{
+    margin-bottom: 40px;
+    color: var(--secondary-text-color);
+}
+.sobreSite .sobreSite-text p:last-child{
+    margin-bottom: 0;
+}
+.sobreSite .sobreSite-text a{
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobreSite .sobreSite-text a i{
+    font-size: 18px;
+    margin-left: 5px;
+    line-height: 0;
+    transition: 0.3s;
+}
+.sobreSite .sobreSite-text a:hover{
+    background-color: color-mix(in srgb, var(--primary-color), transparent 20%);
+    padding-right: 19px;
+}
+.sobreSite .sobreSite-text a:hover i{
+    margin-left: 10px;
+}
+.siteBox-text{
+    background-color: var(--primary-text-color);
+    padding: 50px 40px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+.siteBox-text i{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 0;
+    transition: all 0.4s ease-out 0s;
+    background-color: color-mix(in srgb, var(--primary-color), transparent 95%);
+    color: var(--primary-color);
+}
+.siteBox-text h3{
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.siteBox-text p{
+    margin-bottom: 0;
+    color: var(--secondary-text-color);
+}
+.siteBox-text:hover i{
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+}
+.sobreSite .siteBox .siteBox-1:nth-child(2) .siteBox-text,
+.sobreSite .siteBox .siteBox-1:nth-child(4) .siteBox-text {
+    margin-top: -40px;
+}
+@media (max-width: 1270px){
+    .sobreSite-text{
+        width: 400px;
+    }
+    .siteBox-1{
+        font-size: 13px;
+        letter-spacing: .2px;
+        max-width: 250px;
+
+    }
+    .siteBox-text{
+        padding: 15px 8px;
+    }
+    .siteBoximg-text img{
+        height: inherit;
+    }
+    .siteImg, .siteImg-2{
+        padding: 0;
+        margin: 0;
+    }
+    .siteImg-2{
+        margin-left: 40px;
+    }
+    .siteBoximg{
+        max-width: 190px;
+        max-height: 190px;
+
+    }
+    .siteBox h3{
+        font-size: 17px;
+    }
+    .siteBox i {
+        width: 55px;
+        height: 55px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 1015px){
+    .projSites{
+        flex-direction: column;
+    }
+    .projBox{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 679px){
+    .sobreSite-text{
+        width: 100%;
+        display: flex;flex-direction: column;
+    }
+    .sobreSite .container-fluid{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .siteBox{
+        grid-template-columns: 1fr;
+        width: 100% !important;
+    }
+    .siteBox-1, .siteBoximg{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .siteBox-text, .siteBoximg-text{
+        margin: 0;
+    }
+    .siteBoximg .siteBoximg-text img{
+        width: 100% !important; 
+    }
+}
+
+@media (max-width: 768px) {
+    .sobreSite .siteBox .siteBox-1:nth-child(2) .siteBox-text,
+    .sobreSite .siteBox .siteBox-1:nth-child(4) .siteBox-text {
+        margin-top: 0;
+    }
+}
+
+/*--------------------------------------------------------------
+# Botao para rolar ao topo
+--------------------------------------------------------------*/
+.scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background-color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .scroll-top i {
+    font-size: 24px;
+    color: var(--primary-text-color);
+    line-height: 0;
+  }
+  
+  .scroll-top:hover {
+    background-color: color-mix(in srgb, var(--primary-color), transparent 20%);
+    color: var(--primary-text-color);
+  }
+  
+  .scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
