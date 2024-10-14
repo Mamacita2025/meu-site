@@ -938,6 +938,166 @@ section{
     }
 }
 
+/* Estilizacao da section Ofert  */
+.ofert{
+    width: 100%;
+    background-color: color-mix(in srgb, var(--primary-color), transparent 95%);
+    margin-top: 300px;
+}
+.ofertArticle{
+    padding: 50px 0;
+}
+.ofertDiv{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--terceary-text-color);
+    padding: 50px;
+    color: var(--primary-text-color);
+}
+/* Responsividade da imagem pendente  */
+.ofertDiv .ofertImg{
+    top: -77px;
+    left: -60px;
+    position: absolute;
+    width: 650px;
+    height: 310px;
+}
+.ofertDiv .ofertImg img{
+    width: 100%;
+    height: 100%;
+}
+.ofertDiv .ofertText{
+    position: relative;
+    left: 602px;
+    width: 400px;
+}
+.ofertDiv .ofertText .ofertText-1{
+    text-decoration: underline;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: .5px;
+}
+.ofertDiv .ofertText .ofertText-2{
+    margin: 10px 0;
+    font-size: 25px;
+    line-height: 1.35em;
+}
+.ofertDiv .ofertText .ofertText-3{
+    font-weight: 200;
+    font-size: 13px;
+    word-spacing: 5px;
+}
+.ofertDiv .ofertText .ofertText-3 span{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.ofertConect{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-text-color);
+}
+.ofertConect p{
+    padding-right: 16px;
+}
+.ofertConect .ofertIcons a:nth-child(1){
+    color: red;
+    font-size: 24px;
+    margin: 0 5px
+}
+.ofertConect .ofertIcons a:nth-child(2){
+    color: rgb(0, 132, 255);
+    font-size: 24px;
+    margin: 0 5px
+}
+.ofertConect .ofertIcons a:nth-child(3){
+    color: rgb(165, 48, 48);
+    font-size: 24px;
+    margin: 0 5px
+}
+.ofertConect .ofertIcons a:nth-child(4){
+    color: rgb(24, 97, 165);
+    font-size: 24px;
+    margin: 0 5px
+}
+
+/*-- ----------------------------------------
+    ============ Inicio do FOOTER ==========
+---------------------------------------- --*/
+footer{
+    position: relative;
+    bottom: 0;
+}
+.divFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoFooter{
+    color: var(--secondary-text-color);
+}
+.logoFooter a{
+    font-size: 20px;
+    font-weight: bold;
+}
+.logoFooter a span{
+    font-size: 40px;
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+.logoFooter p{
+    margin: 10px 0;
+}
+.linksFooter{
+    margin-top: 23px;
+}
+.logoFooter .linksFooter a{
+    font-size: 19px;
+    margin: 10px 4px 4px 0px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--secondary-text-color);
+    padding: 9px;
+    border-radius: 50%;
+}
+.logoFooter .linksFooter a:hover{
+    color: color-mix(in srgb, var(--primary-color), transparent 20%);
+}
+
+.contactFooter{
+    color: var(--secondary-text-color);
+}
+.contactFooter p{
+    font-weight: 300;
+    margin: 16px 0;
+}
+.contactFooter p i{
+    margin-right: 10px;
+    font-size: 23px;
+}
+.company{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--optional-text-color);
+    border-top: 1px solid color-mix(in srgb, var(--primary-color), transparent 80%);
+    margin-top: 40px;
+    padding: 10px 0px;
+}
+.company .companyText{
+    display: flex;
+    align-items: center;
+}
+.company .companyText a{
+    margin: 0px 8px;
+}
+.company .companyText a:hover{
+    color: var(--primary-color);
+}
+
 /*--------------------------------------------------------------
 # Botao para rolar ao topo
 --------------------------------------------------------------*/
@@ -973,3 +1133,30 @@ section{
     visibility: visible;
     opacity: 1;
   }
+
+
+
+
+
+  .img-fluid{
+    max-width:100%;
+    height:auto
+}
+.img-thumbnail{
+    padding:.25rem;
+    background-color:var(--bs-body-bg);
+    border:var(--bs-border-width) solid var(--bs-border-color);
+    border-radius:var(--bs-border-radius);
+    max-width:100%;
+    height:auto
+}
+
+.container,.container-fluid{
+    --bs-gutter-x:1.5rem;
+    --bs-gutter-y:0;
+    width:100%;
+    padding-right:calc(var(--bs-gutter-x) * .5);
+    padding-left:calc(var(--bs-gutter-x) * .5);
+    margin-right:auto;margin-left:auto
+}
+  
