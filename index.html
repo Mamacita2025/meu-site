@@ -1,348 +1,441 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Blog</title>
-    <link rel="stylesheet" href="./assets/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body class="">
+    <link rel="stylesheet" href="./assets/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="">
     <!-- ----------------------------------------
     ============ Inicio do HEADER ==========
     ---------------------------------------- -->
     <header class="header">
-        <div class="div-h-p">
-            <div>
-                <div class="div-h-2 mainNav">
-                    <div class="slogan">
-                        <button type="button" class="btnEntrar" style="background-color: var(--secondary-color);">Entrar</button>
-                        <button type="button" class="btnCadastrar">Cadastrar</button>
-                    </div>
-                    <div class=" mainNav_links">
-                        <nav class="nav">
-                            <ul>
-                                <li><a href="#" class="mainNav_link">Home</a></li>
-                                <li><a href="#" class="mainNav_link">Sobre</a></li>
-                                <li><a href="#" class="mainNav_link">Portfolio</a></li>
-                                <li><a href="#" class="mainNav_link">team</a></li>
-                                <li><a href="#" class="mainNav_link">Servicos</a></li>
-                                <li><a href="#" class="mainNav_link">Produtos</a></li>
-                                <li><a href="#" class="mainNav_link">Contacto</a></li>
-                                <a href="#" class="apoio">Apoie-nos</a>
-                            </ul>
-                        </nav>
-                    </div>
-                    
-
-                </div>
-                <!-- Corpo do header  -->
-                <div class="mainHeading">
-                    <div class="mainheading_content">
-                        <article class="mainheading_text">
-                            <p class="mainheading_pretitle">Sobre</p>
-                            <h2 class="mainheading_title">Que tal trabalharmos juntos?</h2>
-                            <p class="mainheading_description">
-                                Um criador de conteudos web e FrontEnd a mais de 2 anos, <br>
-                                Entre num mundo cheio de emocao, criatividade e Design.
-                            </p>
-                            <button class="cta">Ver Mais</button>
-                        </article>
-
-                        <figure class="mainheading_image">
-                            <img src="./assets/img/equipe/person-2.jpg" alt="Luis Gomes, Criador de Web sites.">
-                        </figure>
-                    </div>
-                </div>
+      <div class="div-h-p">
+        <div>
+          <div class="div-h-2 mainNav">
+            <div class="slogan">
+              <button
+                type="button"
+                class="btnEntrar"
+                style="background-color: var(--secondary-color)"
+              >
+                Entrar
+              </button>
+              <button type="button" class="btnCadastrar">Cadastrar</button>
             </div>
+            <div class="btnDiv">
+              <button onclick="animar()" id="btn-menu">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+              </button>
+            </div>
+            <script>
+              function animar() {
+                const btn = document.getElementById("btn-menu");
+                const links = document.querySelector('.mainNav_links')
+                links.classList.toggle('active')
+                btn.classList.toggle("ativar");
+              }
+            </script>
+            <div class="mainNav_links" onclick="animar()">
+              <nav class="nav">
+                <ul>
+                  <li><a href="#" class="mainNav_link">Home</a></li>
+                  <li><a href="#" class="mainNav_link">Sobre</a></li>
+                  <li><a href="./paginas/portfolio.html" class="mainNav_link">Portfolio</a></li>
+                  <li><a href="#" class="mainNav_link">team</a></li>
+                  <li><a href="#" class="mainNav_link">Servicos</a></li>
+                  <li><a href="#" class="mainNav_link">Produtos</a></li>
+                  <li><a href="#" class="mainNav_link">Contacto</a></li>
+                  <a href="#" class="apoio">Apoie-nos</a>
+                </ul>
+              </nav>
+            </div>
+          </div>
+         
+          <!-- Corpo do header  -->
+          <div class="mainHeading">
+            <div class="mainheading_content">
+              <article class="mainheading_text">
+                <p class="mainheading_pretitle">Sobre</p>
+                <h2 class="mainheading_title">Que tal trabalharmos juntos?</h2>
+                <p class="mainheading_description">
+                  Um criador de conteudos web e FrontEnd a mais de 2 anos,
+                  <br />
+                  Entre num mundo cheio de emocao, criatividade e Design.
+                </p>
+                <button class="cta">Ver Mais</button>
+              </article>
+
+              <figure class="mainheading_image">
+                <img
+                  src="./assets/img/equipe/person-2.jpg"
+                  alt="Luis Gomes, Criador de Web sites."
+                />
+              </figure>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
     <!-- ----------------------------------------
     ============ Fim do HEADER ==========
     ---------------------------------------- -->
 
-
     <!-- ----------------------------------------
     ============ Inicio do MAIN ==========
     ---------------------------------------- -->
     <main class="main">
-        <!-- Inicio da seccao Seja Bem-Vindo  -->
-         <section class="bem-vindo">
-            <div class="bem-vindoText">
-                <h1>Seja Bem-Vindo ao meu Blog</h1>
-                <p>
-                    Chegue mais perto e sinta-se a vontade, e com muito prazer que te apresento o meu primeiro trabalho feito cuidadosamente <br> e com carinho para que conhecas o meu nivel como desenvolvedor Web.
+      <!-- Inicio da seccao Seja Bem-Vindo  -->
+      <section class="bem-vindo">
+        <div class="bem-vindoText">
+          <h1>Seja Bem-Vindo ao meu Blog</h1>
+          <p>
+            Chegue mais perto e sinta-se a vontade, e com muito prazer que te
+            apresento o meu primeiro trabalho feito cuidadosamente <br />
+            e com carinho para que conhecas o meu nivel como desenvolvedor Web.
+          </p>
+          <button type="button" class="bem-vindoBtn">Ler Mais</button>
+        </div>
+      </section>
+      <!-- Fim da seccao Seja Bem-vindo -->
+
+      <!-- Inicio da seccao Hero  -->
+      <section class="hero_section container">
+        <article class="hero_article">
+          <div class="hero">
+            <!-- Hero info-text  -->
+            <div class="hero_infoT">
+              <div class="hero_msm">
+                <span>&capbrcup;</span>
+                <p class="hero_text-header">
+                  Tambem podes fazer parte desta grande familia.
                 </p>
-                <button type="button" class="bem-vindoBtn">Ler Mais</button>
+              </div>
+              <div class="hero_title">
+                <h1>
+                  Um estudio focado em criacao de <br /><span class="web_design"
+                    >Web Design!</span
+                  >
+                </h1>
+              </div>
+              <div class="hero_text_body">
+                <p class="hero-text">
+                  Seja bem vindo a nossa sala de criadores, onde acontece a
+                  sublimidade de inovacoes, ideias, diversidade de culturismo e
+                  muitos outros assuntos abordados neste topico.
+                </p>
+              </div>
+              <div class="hero_starter">
+                <form action="#">
+                  <input
+                    type="email"
+                    name="starter"
+                    id="starter"
+                    placeholder="Insere o seu email"
+                  />
+                  <button type="submit">Start trial</button>
+                </form>
+              </div>
+              <div class="hero-suport">
+                <div class="hero_suportText">
+                  <span>&ccaps;</span>
+                  <div>
+                    <p class="p">24/24 Suporte</p>
+                    <p class="suport-textBody">
+                      Interaja, para qualquer duvida
+                    </p>
+                  </div>
+                </div>
+                <div class="hero_agency">
+                  <span>&acE;</span>
+                  <div>
+                    <p class="p">colecoes da agencia</p>
+                    <p class="hero_agencyText">
+                      captando tempo integral e colecoes.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-         </section><!-- Fim da seccao Seja Bem-vindo -->
+            <!-- Hero img-animated  -->
+            <div class="hero_img">
+              <img
+                src="assets/img/select/details-4.png"
+                alt=""
+                class="animated"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- Fim da seccao hero  -->
 
-        <!-- Inicio da seccao Hero  -->
-        <section class="hero_section container">
-            <article class="hero_article">
-                <div class="hero">
-                    <!-- Hero info-text  -->
-                    <div class="hero_infoT">
-                        <div class="hero_msm">
-                            <span>&capbrcup;</span>
-                            <p class="hero_text-header">
-                                 Tambem podes fazer parte desta grande familia.
-                            </p>
-                        </div>
-                        <div class="hero_title">
-                            <h1>Um estudio focado em criacao de <br><span class="web_design">Web Design!</span></h1>
-                        </div>
-                        <div class="hero_text_body">
-                            <p class="hero-text">
-                                Seja bem vindo a nossa sala de criadores, onde acontece a sublimidade de inovacoes, ideias, diversidade de culturismo e muitos outros assuntos abordados neste topico.
-                            </p>
-                        </div>
-                        <div class="hero_starter">
-                            <form action="#">
-                                <input type="email" name="starter" id="starter" placeholder="Insere o seu email">
-                                <button type="submit">Start trial</button>
-                            </form>
-                        </div>
-                        <div class="hero-suport">
-                            <div class="hero_suportText">
-                                <span>&ccaps;</span>
-                                <div>
-                                    <p class="p">24/24 Suporte</p>
-                                    <p class="suport-textBody">Interaja, para qualquer duvida</p>
-                                </div>
-                            </div>
-                            <div class="hero_agency">
-                                <span>&acE;</span>
-                                <div>
-                                    <p class="p">colecoes da agencia</p>
-                                    <p class="hero_agencyText">captando tempo integral e colecoes.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Hero img-animated  -->
-                    <div class="hero_img">
-                        <img src="assets/img/select/details-4.png" alt="" class="animated">
-                    </div>
-                </div>
-            </article>
-        </section><!-- Fim da seccao hero  -->
+      <!-- Inicio da seccao solucao -->
+      <section class="solut_resolv">
+        <article class="solut_resolvArticle container">
+          <div class="solut_title">
+            <h1>A solucao que temos para si</h1>
+          </div>
 
-        <!-- Inicio da seccao solucao -->
-         <section class="solut_resolv">
-            <article class="solut_resolvArticle container">
-                <div class="solut_title">
-                    <h1>A solucao que temos para si</h1>
-                </div>
+          <div class="solut_subtitle">
+            <span>56%</span>
+            <p>
+              de visitantes com confianca e credibilidade nos nossos servicos.
+            </p>
+          </div>
 
-                <div class="solut_subtitle">
-                    <span>56%</span><p>de visitantes com confianca e credibilidade nos nossos servicos.</p>
-                </div>
+          <div class="solut_text">
+            <h3>Websites iterativos com o design a sua preferencia!</h3>
 
-                <div class="solut_text">
-                    <h3>Websites iterativos com o design a sua preferencia!</h3>
+            <p class="text-1">
+              Estamos no mercado desde 2021, distribuindo um servico melhor para
+              si com mais de 24.357 solicitacoes desde este tempo. (<span
+                style="
+                  font-weight: bold;
+                  color: var(--primary-color);
+                  font-size: 13px;
+                "
+                >Confira</span
+              >)
+            </p>
 
-                    <p class="text-1">
-                        Estamos no mercado desde 2021, distribuindo um servico melhor para si com mais de 24.357 solicitacoes desde este tempo. (<span style="font-weight: bold;color: var(--primary-color);font-size: 13px;">Confira</span>) 
-                    </p>
+            <p class="text-2">
+              Solicite os nosssos servicos, crie um site responsivo ao seu gosto
+              e claro, usando varias versoes engajando mais o seu publico alvo
+              com a estrategia simples e rapida, tudo isto descobriras aqui e
+              muitas outras surpresas.
+            </p>
 
-                    <p class="text-2">
-                        Solicite os  nosssos servicos, crie um site responsivo ao seu gosto e claro, usando varias versoes engajando mais o seu publico alvo com a estrategia simples e rapida, tudo isto descobriras aqui e muitas outras surpresas.
-                    </p>
+            <p class="text-3">
+              <span
+                style="
+                  color: var(--primary-color);
+                  font-weight: bold;
+                  font-size: 15px;
+                "
+              >
+                os nossos servicos tambem sao aprovados por varios devs
+              </span>
+              Homens e mulheres de varias classes sociais, tambem ja visitaram
+              as nossas paginas e aprovaram os nossos servicos.
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- Fim da section solut_resolv  -->
 
-                    <p class="text-3">
-                        <span style="color: var(--primary-color);font-weight: bold;font-size: 15px;">
-                            os nossos servicos tambem sao aprovados por varios devs 
-                        </span>
-                        Homens e mulheres de varias classes sociais, tambem ja visitaram as nossas paginas e aprovaram os nossos servicos.
-                    </p>
-                </div>
-            </article>
-         </section><!-- Fim da section solut_resolv  -->
+      <!-- Inicio da section equip  -->
+      <section class="equip">
+        <article class="equipArticle container">
+          <div class="equip-imgInfo">
+            <div class="equipImg">
+              <img
+                src="assets/img/equipe/about-company-2.jpg"
+                alt="Equipe na sala de trabalho"
+              />
+            </div>
+            <div class="equipInfo">
+              <h2>
+                Trabalhamos juntos, <br />
+                Levando a arte ate si.
+              </h2>
 
-         <!-- Inicio da section equip  -->
-          <section class="equip">
-            <article class="equipArticle container">
-                <div class="equip-imgInfo">
-                    <div class="equipImg">
-                        <img src="assets/img/equipe/about-company-2.jpg" alt="Equipe na sala de trabalho">
-                    </div>
-                    <div class="equipInfo">
-                        <h2>Trabalhamos juntos, <br> Levando a arte ate si.</h2>
+              <p>
+                Uma equipe focada na contribuicao do desenvolvimento economico e
+                social do pais.
+              </p>
 
-                        <p>
-                            Uma equipe focada na contribuicao do desenvolvimento economico e social do pais.
-                        </p>
+              <span> Entre em contato </span>
 
-                        <span>
-                            Entre em contato
-                        </span>
+              <button type="button" class="cta">Saiba Mais</button>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- Fim da section equip  -->
 
-                        <button type="button" class="cta">Saiba Mais</button>
-                    </div>
-                </div>
-            </article>
-          </section><!-- Fim da section equip  -->
+      <!-- Section Proj  -->
+      <section class="projSection">
+        <article class="projArticle container">
+          <div class="proj">
+            <h1 class="projH1">Exibindo alguns projetos ja feitos</h1>
 
+            <p class="projP">
+              Esta seccao sera atualizada com os mais novos e recentes projetos
+              feitos por mim, e tambem poderas ver o meu portfoliu em tempo real
+              toda vez que versionar um site. e tambem reveje o meu portfoliu
+              todas as vezes que for possivel pois la tera novidades para si.
+            </p>
 
-          <!-- Section Proj  -->
-          <section class="projSection">
-            <article class="projArticle container">
-                <div class="proj">
-                    <h1 class="projH1">Exibindo alguns projetos ja feitos</h1>
+            <p class="projP2">
+              Seja a nossa companhia nesta caminhada e usufrui das nossas
+              ofertas gratuitas que temos preparado para si com muito carinho, a
+              pensar em si.
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- End proj  -->
 
-                    <p class="projP">Esta seccao sera atualizada com os mais novos e recentes projetos feitos por mim, e tambem poderas ver o meu portfoliu em tempo real toda vez que versionar um site. e tambem reveje o meu portfoliu todas as vezes que for possivel pois la tera novidades para si.</p>
+      <!-- section sobre sites  -->
+      <section class="sobreSite">
+        <article class="sobreSiteArticle container-fluid">
+          <div class="projSites">
+            <div class="sobreSite-text">
+              <h5>Sobre nos</h5>
 
-                    <p class="projP2">Seja a nossa companhia nesta caminhada e usufrui das nossas ofertas gratuitas que temos preparado para si com muito carinho, a pensar em si.</p>
-                </div>
-            </article>
-          </section><!-- End proj  -->
+              <h2>
+                visite o blog de entretenimento <br />
+                que esta a dar no que falar
+              </h2>
 
-          <!-- section sobre sites  -->
-          <section class="sobreSite">
-            <article class="sobreSiteArticle container-fluid">
-                <div class="projSites">
-                    <div class="sobreSite-text">
-                        <h5>Sobre nos</h5>
+              <p>
+                Um lugar onde tambem podes iteragir com varias pessoas de varios
+                lugares, diversidades culturais com diversas linguas traduzidas
+                na sua linguajem entre outros, publique, partilhe as noticias de
+                ultima hora com entretenimento dia apos dia.
+              </p>
 
-                        <h2>visite o blog de entretenimento <br> que esta a dar no que falar</h2>
+              <a href="#"
+                ><span>Ver Mais</span><i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
 
-                        <p>
-                            Um lugar onde tambem podes iteragir com varias pessoas de varios lugares, diversidades culturais com diversas linguas traduzidas na sua linguajem entre outros, publique, partilhe as noticias de ultima hora com entretenimento dia apos dia.
-                        </p>
-
-                        <a href="#"><span>Ver Mais</span><i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="projBox">
-                        <div class="siteBox">
-
-                            <div class="siteBox-1">
-                                <div class="siteBox-text">
-                                    <i class="bi bi-building"></i>
-                                    <h3>Empresas satisfeitas</h3>
-                                    <p>
-                                        Ja criamos e vendemos templates para e-commerce, midia social para micro e macro-empresarios, faca tambem a sua solicitacao.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="siteBoximg siteImg">
-                                <div class="siteBoximg-text">
-                                    <img src="./assets/img/select/testimonials-bg.jpg" alt="Pessoas satisfeitas">
-                                </div>
-                            </div>
-
-                            <div class="siteBoximg siteImg-2">
-                                <div class="siteBoximg-text">
-                                    <img src="./assets/img/select/Alda News.png" alt="Alda News">
-                                </div>
-                            </div>
-                            
-                            <div class="siteBox-1">
-                                <div class="siteBox-text">
-                                    <i class="bi bi-graph-up-arrow"></i>
-                                    <h3>Alda News</h3>
-                                    <p>
-                                        A Alda  News e o nosso principal projeto, totalmente livre e grauito com iteratividade animada e bom visual.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </article>
-          </section>
-
-          <!-- Section ofert  -->
-          <section class="ofert">
-            <article class="ofertArticle container">
-                <div class="ofertDiv">
-                    <div class="ofertImg">
-                        <img src="./assets/img/about.jpg" alt="Oferta da organizacao">
-                    </div>
-                    <div class="ofertText">
-                        <p class="ofertText-1">
-                            A expansao das nossas ofertas!
-                        </p>
-                        <p class="ofertText-2">
-                            Claro que isto so se aplica a clientes que ja solicitaram os nossos servicos, e ja com projetos ativos.
-                        </p>
-                        <p class="ofertText-3">
-                            Por <span>Luis Gomes.</span> FrontEnd e Designer
-                        </p>
-                    </div>
-                </div>
-                <div class="ofertConect">
+            <div class="projBox">
+              <div class="siteBox">
+                <div class="siteBox-1">
+                  <div class="siteBox-text">
+                    <i class="bi bi-building"></i>
+                    <h3>Empresas satisfeitas</h3>
                     <p>
-                        Conecte-se conosco nas redes sociais
+                      Ja criamos e vendemos templates para e-commerce, midia
+                      social para micro e macro-empresarios, faca tambem a sua
+                      solicitacao.
                     </p>
-                    <div class="ofertIcons">
-                        <a href="#"><i class="bi bi-youtube"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                    </div>
+                  </div>
                 </div>
-            </article>
-          </section> 
-          
-          
+
+                <div class="siteBoximg siteImg">
+                  <div class="siteBoximg-text">
+                    <img
+                      src="./assets/img/select/testimonials-bg.jpg"
+                      alt="Pessoas satisfeitas"
+                    />
+                  </div>
+                </div>
+
+                <div class="siteBoximg siteImg-2">
+                  <div class="siteBoximg-text">
+                    <img
+                      src="./assets/img/select/Alda News.png"
+                      alt="Alda News"
+                    />
+                  </div>
+                </div>
+
+                <div class="siteBox-1">
+                  <div class="siteBox-text">
+                    <i class="bi bi-graph-up-arrow"></i>
+                    <h3>Alda News</h3>
+                    <p>
+                      A Alda News e o nosso principal projeto, totalmente livre
+                      e grauito com iteratividade animada e bom visual.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Section ofert  -->
+      <section class="ofert">
+        <article class="ofertArticle container">
+          <div class="ofertDiv">
+            <div class="ofertImg">
+              <img src="./assets/img/about.jpg" alt="Oferta da organizacao" />
+            </div>
+            <div class="ofertText">
+              <p class="ofertText-1">A expansao das nossas ofertas!</p>
+              <p class="ofertText-2">
+                Claro que isto so se aplica a clientes que ja solicitaram os
+                nossos servicos, e ja com projetos ativos.
+              </p>
+              <p class="ofertText-3">
+                Por <span>Luis Gomes.</span> FrontEnd e Designer
+              </p>
+            </div>
+          </div>
+          <div class="ofertConect">
+            <p>Conecte-se conosco nas redes sociais</p>
+            <div class="ofertIcons">
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
     <!-- ----------------------------------------
     ============ Fim do MAIN ==========
     ---------------------------------------- -->
 
-
     <!-- ----------------------------------------
     ============ Inicio do FOOTER ==========
     ---------------------------------------- -->
     <footer>
-        <section class="sectionFooter">
-            <article class="articleFooter container">
-                <div class="divFooter">
-                    <div class="logoFooter">
-                        <a>
-                            <span>&aleph;</span> Algum Logo
-                        </a> 
-                        <p>
-                            Prazer eu estou disponivel 24Horas, ou seja, podes me <br> solicitar a qualquer hora para qualquer negocio.
-                        </p>
-                        <div class="linksFooter">
-                            <a href="#"><i class="bi bi-dropbox"></i></a>
-                            <a href="#"><i class="bi bi-linkedin"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="contactFooter">
-                        <p><i class="bi bi-phone-fill"></i>+244 942613411</p>
-                        <p><i class="bi bi-envelope-at-fill"></i>LuisGomes.09a@hotmail.com</p>
-                        <p><i class="bi bi-map-fill"></i> S R703 E #2345 Calemba2/. UT s345</p>
-                    </div>
-                </div>
-                <div class="company">
-                    <div class="companyCopy">
-                        &copy; 2024 Company, inc 
-                    </div>
-                    <div class="companyText">
-                        <a href="#" class="mainNav_link">Termos de uso</a>
-                        <a href="#" class="mainNav_link">Politica de privacidade</a>
-                        <a href="#" class="mainNav_link">Preferencia de cookies</a>
-                    </div>
-                </div>
-            </article>
-        </section>
+      <section class="sectionFooter">
+        <article class="articleFooter container">
+          <div class="divFooter">
+            <div class="logoFooter">
+              <a> <span>&aleph;</span> Algum Logo </a>
+              <p>
+                Prazer eu estou disponivel 24Horas, ou seja, podes me <br />
+                solicitar a qualquer hora para qualquer negocio.
+              </p>
+              <div class="linksFooter">
+                <a href="#"><i class="bi bi-dropbox"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="contactFooter">
+              <p><i class="bi bi-phone-fill"></i>+244 942613411</p>
+              <p>
+                <i class="bi bi-envelope-at-fill"></i>LuisGomes.09a@hotmail.com
+              </p>
+              <p>
+                <i class="bi bi-map-fill"></i> S R703 E #2345 Calemba2/. UT s345
+              </p>
+            </div>
+          </div>
+          <div class="company">
+            <div class="companyCopy">&copy; 2024 Company, inc</div>
+            <div class="companyText">
+              <a href="#" class="mainNav_link">Termos de uso</a>
+              <a href="#" class="mainNav_link">Politica de privacidade</a>
+              <a href="#" class="mainNav_link">Preferencia de cookies</a>
+            </div>
+          </div>
+        </article>
+      </section>
     </footer>
     <!-- ----------------------------------------
     ============ Fim do FOOTER ==========
     ---------------------------------------- -->
 
     <!-- botao para rolar ao topo  -->
-     <a href="#" id="scroll-top" class="scroll-top"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" id="scroll-top" class="scroll-top"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
     <script src="assets/js/script.js"></script>
-
-
-</body>
+  </body>
 </html>

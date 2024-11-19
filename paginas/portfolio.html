@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Meu Portfolio</title>
+    <link rel="stylesheet" href="./../assets/css/portfolio.css" />
+  </head>
+  <body class="body">
+    <!-- Ola!, Seja Bem-Vindo ao meu portfolio aqui veras os passos que eu dei ao longo do meu sucesso como programador que tal comecarmos com algo simples que aprendi mesmo hoje -- (02/11/2024) -->
+
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+      <div class="hDiv">
+        <h1>Logo</h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Produtos</a></li>
+          </ul>
+        </nav>
+        <div class="btnDiv">
+          <button onclick="animar()" id="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+          </button>
+        </div>
+        <script>
+          function animar() {
+            const btn = document.getElementById("btn-menu");
+            btn.classList.toggle("ativar");
+          }
+        </script>
+      </div>
+    </header>
+
+    <!-- ------------------------------------------------------------------
+============== ANIMACAO DE "DIGITANDO O TEXTO" ====================
+------------------------------------------------------------------ -->
+    <section class="section-txt">
+      <div class="txt-animado">Voce <span></span></div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+============== ANIMACAO DE "HABILIDADES" ====================
+------------------------------------------------------------------ -->
+    <section class="habilidades">
+      <div class="skills">
+        <h1>Minhas Habilidades</h1>
+        <ul>
+          <li>
+            <h3>HTML</h3>
+            <span class="barras"><span class="html"></span></span>
+          </li>
+          <li>
+            <h3>CSS</h3>
+            <span class="barras"><span class="css"></span></span>
+          </li>
+          <li>
+            <h3>JAVASCRIPT</h3>
+            <span class="barras"><span class="javascript"></span></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="../assets/js/portfolio.js"></script>
+  </body>
+</html>
