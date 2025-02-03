@@ -147,27 +147,27 @@ section {
 
     0%,
     20% {
-        content: 'Sou o Luis Gomes?';
+        content: 'ainda esta em desenvolvimento';
     }
 
     21%,
     40% {
-        content: 'Ja se inscreveu?';
+        content: 'se inscreveu nele?';
     }
 
     41%,
     60% {
-        content: 'Ja fizeste parte do Alda News?';
+        content: 'Esta linkado com Alda News?';
     }
 
     61%,
     80% {
-        content: 'Este e o meu portfolio';
+        content: 'Tem o meu portfolio';
     }
 
     81%,
     100% {
-        content: 'Vamos la entao';
+        content: 'E proficional';
     }
 }
 

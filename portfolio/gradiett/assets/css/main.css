@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main section {
+  height: 50vh;
+  padding: 10px;
+}
+
+.gradient1 {
+  background: linear-gradient(45deg, #ffb3d9 0%, #fffe86 100%);
+}
+
+.gradient2 {
+  background: linear-gradient(to right, #f1ebdd 0%, #daccd8 100%);
+}
+
+.gradient3{
+    background: linear-gradient(to right, #d7dadc 0%, #edf3f3 100%);
+}
+
+.gradient4{
+    background: linear-gradient(to bottom, #d0c9ce 0%, #ebebf0 100%);
+}
+
+.gradient5{
+    background: linear-gradient(to right, #dbdafb 0%, #fff7c1 100%);
+}
+
+.gradient6{
+    background: linear-gradient(to right, #e9e8e6 0%, #f3e6d6 100%);
+}
+
+.gradient7{
+    background: linear-gradient(45deg, #eef5fb 0%, #bfd9f0 100%);
+}
+
+.gradient8{
+    background: linear-gradient(45deg, #efebe0 0%, #c3ede1 100%);
+}
+
+.gradient9{
+    background: linear-gradient(-121deg, #acd8fd 0%, #fbfcfe 100%);
+}
+
+.gradient10{
+    background: linear-gradient(to bottom, #d7fffe 0%, #fffeff 100%);
+}
+
+.gradient11{
+    background: linear-gradient(to right, #df5eff 0%, #a2fff7 100%);
+}
+
+.gradient12{
+    background: linear-gradient(-121deg, #f3f6fd 0%, #b2c3dd 50%, #f3f6fd 100%);
+}
+
+.gradient13{
+    background: linear-gradient(to right, #cfcfcf 0%, #ffffff 100%);
+}
+
+.gradient14{
+    background: linear-gradient(-121deg, #acd8fd 0%, #fbfcfe 100%);
+}

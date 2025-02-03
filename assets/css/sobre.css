@@ -1,0 +1,166 @@
+@import url(./style.css);
+
+:root{
+    --txt-brad: #4e424c; 
+}
+
+.gradient1 {
+    background: linear-gradient(45deg, var(--heading-color) 0%, var(--primary-color) 100%);
+    height: 500px;
+    position: relative;
+
+    & .carousselAlvo {
+        position: absolute;
+        bottom: 10%;
+        left: 3%;
+
+        & ul {
+            display: flex;
+
+            & li {
+                width: 6px;
+                height: 6px;
+                background-color: #fff;
+                margin: 2px 5px;
+                border: none;
+                border-radius: 50%;
+
+
+            }
+        }
+
+        li.active {
+            background-color: #3b2338;
+        }
+    }
+}
+
+/* Estilos do caroussel Nav  */
+.carousselNav {
+    position: absolute;
+    bottom: 20%;
+    left: 3%;
+    width: 50%;
+
+    & .btnLeft,
+    & .btnRight {
+        font-size: 2em;
+        background-color: transparent;
+        color: #3b2338;
+        font-weight: bold;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    & .btnLeft {
+        bottom: 50%;
+        left: -3%;
+    }
+
+    & .btnRight {
+        bottom: 50%;
+        right: 23%;
+        transform: rotate(180deg);
+    }
+}
+
+.carousselContent {
+    margin: 15px;
+    width: 70%;
+    display: none;
+    & h2 {
+        margin-bottom: 10px;
+        color: #3b2338;
+    }
+
+    & .carousseltxt1 {
+        margin-bottom: 20px;
+        color: var(--txt-brad);
+    }
+
+    & .carousseltxt2 {
+        color: var(--txt-brad);
+    }
+
+    & .carousselBtn {
+        margin-top: 25px;
+        color: var(--txt-brad);
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 7px 12px;
+        border-radius: 4px;
+        background-color: transparent;
+        border: 1px solid #3b2338;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    & .carousselBtn:hover {
+        background-color: #3b2338;
+        color: #fff;
+        transition: .5s;
+    }
+    
+
+}
+.carousselContent.active{
+    display: block;
+}
+
+/* Content Main  */
+.bg-content{
+    background-color: var(--terceary-color);
+    padding: 100px 0;
+}
+.contentMain{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    align-items: center;
+    & .aboutContent{
+        width: 35%;
+        padding: 10px;
+        margin-left: 40px; 
+        position: relative;
+        & .d-content{
+            h1{
+                color: var(--primary-color);
+            }
+            & .leadMain{
+                margin: 20px 0;
+                color: var(--txt-brad);
+            }
+            h3{
+                margin-bottom: 20px;
+                color: var(--primary-color);
+            }
+        }
+        & .otherServic{
+            right: 0;
+            background-color: var(--primary-color);
+            color: #fff;
+            position: absolute;
+            padding: 15px;
+            border-radius: 5px;
+            width: 250px;
+            margin-top: 70px;
+            & ul{
+                
+                & li{
+                    margin: 10px 0;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
+.imgMainTxt{
+    color: var(--heading-color);
+}
+.imgMain{
+    width: 500px;
+    & img{
+        width: 100%;
+
+    }
+}
