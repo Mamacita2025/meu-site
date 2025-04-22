@@ -32,7 +32,7 @@
 /* Trabalhando na estrutura global do site  */
 * {
     font-family: var(--default-font);
-    list-style: none;
+    /* list-style-type: none; */
     border: 0;
     -webkit-tap-highlight-color: transparent;
     margin: 0;
@@ -106,6 +106,7 @@
     color: #9197ae;
     text-transform: uppercase;
     padding: 0 40px;
+    
 }
 
 @media screen and (max-width: 799px) {
@@ -118,6 +119,7 @@
     display: flex;
     justify-content: center;
     font-family: var(--nav-font);
+    list-style-type: none;
 }
 
 .mainNav nav {

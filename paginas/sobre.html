@@ -5,17 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mim</title>
     <link rel="stylesheet" href="./../assets/css/sobre.css">
+    <link rel="stylesheet" href="./../assets/font/bootstrap-icons.min.css">
 </head>
 <body>
     <!-- Cabecalho  -->
     <header class="gradient1">
+        <div class="">
+            <!-- OBS: este caecalho foi copiado apartir da pagina principal, e claro que isto pode ser feito dinamicamente com PHP!  -->
+            <div class="div-h-2 mainNav">
+                <div class="slogan">
+                 <div class="logo">
+                    <img src="" alt="Img Logo">
+                 </div>
+                </div>
+                <div class="btnDiv">
+                  <button onclick="animar()" id="btn-menu">
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                  </button>
+                </div>
+                <script>
+                  function animar() {
+                    const btn = document.getElementById("btn-menu");
+                    const links = document.querySelector('.mainNav_links')
+                    links.classList.toggle('active')
+                    btn.classList.toggle("ativar");
+                  }
+                </script>
+                <div class="mainNav_links" onclick="animar()">
+                  <nav class="nav">
+                    <ul>
+                      <li><a href="./../index.html" class="mainNav_link">Home</a></li>
+                      <li><a href="./sobre.html" class="mainNav_link">Sobre</a></li>
+                      <li><a href="./portfolio.html" class="mainNav_link">Portfolio</a></li>
+                      <li><a href="#" class="mainNav_link">team</a></li>
+                      <li><a href="./servicos.html" class="mainNav_link">Servicos</a></li>
+                      <li><a href="#" class="mainNav_link">Produtos</a></li>
+                      <li><a href="#" class="mainNav_link">Contacto</a></li>
+                      <a href="#" class="apoio">Apoie-nos</a>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
+        </div>
         <div class="carousselNav">
             <button class="btnLeft">&lt;</button>
             <div class="" style="display: flex;">
                 <div class="carousselContent active">
                     <h2>Sobre Alguns Conceitos</h2>
                     <p class="carousseltxt1">
-                        Pois e claro que estas curioso para espreitares os mais diversos trabalhos feitos por mentes brilhantes como a minha equipe, pois estas no local certo para comecares a desvendar estes desafios.
+                        Pois e claro que estas curioso para espreitares os mais diversos trabalhos <br> feitos por  mentes brilhantes como a minha equipe, pois estas no local certo para comecares a desvendar estes desafios.
                     </p>
                     <p class="carousseltxt2">Sites super estilosos</p>
     
@@ -53,6 +94,64 @@
         </div>
     </header>
 
+    <!-- About Us  -->
+    <section class="aboutSection">
+        <div class="resp">
+            <!-- Aqui varios conteudos ainda estao em decurso mas vou abreviar por enquanto com textos aleatorios (lorem ipsum) -->
+            <div class="aboutTxt">
+                <div class="aboutContent">
+                    <div class="aboutContentTxt">
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet sunt ullam dolore rerum incidunt repellat soluta quia quae!
+                        </h3>
+                        <p class="trajeto">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quaerat autem. Eum, repellendus:
+                        </p>
+                        <ul style="margin-left: 30px;" class="cursed">
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, rerum?</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                        </ul>
+                        <h2>
+                            Lorem, ipsum dolor.
+                        </h2>
+                        <p class="">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ab dolores porro doloremque voluptatibus iste!
+                        </p>
+                        <p style="color: rgb(45, 107, 241);" class="proj_dealt">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, explicabo odit soluta at placeat a, dolorum iste animi ullam, ratione facere. Dolorum quibusdam ipsam nihil praesentium nulla quidem vel quae voluptates dolorem quas deserunt quod sapiente, alias vero magnam architecto error est exercitationem adipisci illo? Delectus nesciunt magni veniam unde.
+                        </p>
+                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maiores nisi incidunt neque nemo.</p>
+                        <p class=""><span>Importante:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aperiam ut quas nemo reprehenderit. <a href="#" style="color: rgb(45, 107, 241);">Lorem ipsum dolor sit.</a></p>
+                        <ul style="list-style-type: decimal;margin-left: 30px;" class="decList">
+                            <li>Lorem ipsum dolor sit amet.a <a href="#" style="color: rgb(45, 107, 241);">Google Play.</a></li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro nihil a ipsam possimus, ab illum.</li>
+                            <ul style="margin-left: 30px;">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, sed.</li>
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, explicabo! Repellendus, eum.</li>
+                            </ul>
+                        </ul>
+                        <p class="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum praesentium dolor optio soluta veniam dignissimos sapiente? Quaerat dolorem tenetur exercitationem labore commodi earum iure tempora, dicta, harum voluptatum libero. Quisquam id minima ut fugiat pariatur magni? Aut quo, molestiae tempora sint voluptatibus dolores asperiores earum enim corrupti dolore nam, delectus deserunt accusantium autem dolorum obcaecati laboriosam iure? Tempore deserunt libero repudiandae deleniti veritatis tenetur unde voluptates ut, pariatur magnam architecto consectetur est eligendi corporis quo repellat maxime possimus impedit reprehenderit animi magni numquam. Laboriosam quae veritatis aperiam necessitatibus, totam nulla, atque enim molestiae ipsum corporis provident eligendi! Qui, consectetur accusantium! Ut vel at, provident consequuntur, amet qui nemo sapiente eligendi veniam commodi odit similique eius est dolores expedita ab iure ipsa voluptatem doloremque tempore dolore magni nesciunt minus? Recusandae molestiae unde commodi culpa, corporis, esse nemo qui voluptatum laborum saepe tempora, asperiores consequuntur fuga! Voluptas atque tempora optio iure soluta?
+                        </p>
+                    </div>
+                </div>
+                <div class="aboutImg">
+
+                    <p class="">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At maxime quasi voluptatum ratione placeat dolore earum saepe repellendus consequatur fugit.</span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sit delectus praesentium sint, totam molestias at quibusdam quia iure excepturi! Veniam, neque modi incidunt illum mollitia cum illo praesentium porro at aut, asperiores labore perferendis similique accusantium? Laudantium impedit omnis sit id eum. Aspernatur natus ducimus voluptatem et illo quisquam facilis molestiae sequi rem, corrupti, obcaecati sint dolorem eos nostrum quasi quis nulla labore quam architecto repellat fugit pariatur voluptatibus? Ab, quasi accusantium reprehenderit est nulla quod impedit quas deserunt sunt itaque beatae. Dolores voluptates voluptatibus explicabo ex, veniam corporis iste quas debitis cumque consequatur animi, ipsam corrupti voluptate provident? <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur atque iure, ullam corporis obcaecati ad.</span>
+                        <div class="imgReset">
+                            <img src="./../assets/img/cta-bg.jpg" alt="">
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iure cum praesentium delectus reiciendis nostrum dolor, saepe ducimus pariatur alias quas, voluptate excepturi ad, obcaecati distinctio officia. Repellendus cumque accusamus molestias minus fugit laborum mollitia est distinctio? Atque, beatae. Odio, maiores tempore fuga similique numquam iste ipsam exercitationem eius eaque.
+                    </p>
+                </div>
+            </div>
+        </div>
+     </section>
+
     <!-- Corpo  -->
      <main>
         <div class="bg-content">
@@ -65,14 +164,14 @@
                 </div>
                 <div class="aboutContent">
                     <div class="d-content">
-                        <h1>Sobre Os Sevicos</h1>
+                        <h1>Sobre Os Servicos</h1>
                         <p class="leadMain">
                             E claro que, para que possamos desvendar o modo interessante "no que diz respeito ao design, interatividade, etc". E claro que eles sao feitos de acordo aos pedidos do cliente mas o que impacta mais os nossos publicos alvos e o nosso proficionalismo no mercado de trabalho, Criacao e inovacao, ja para nao esquecer tambem da interatividade incrivel, podes testar isso agora entrando em contacto com a gente pelo Whatsapp entre outras redes sociais.
                         </p>
                         <h3>Hoje pode ser o teu dia de sorte, No pedido de um site VIP podes levar Servicos adicionais.</h3>
                     </div>
                     <div class="otherServic">
-                        <ul>
+                        <ul style="list-style-type: none;">
                             <li>&zigrarr; Controlo de Contas</li>
                             <li>&zigrarr; Protecao em tempo real</li>
                             <li>&zigrarr; Privacidade maxima</li>
@@ -82,11 +181,73 @@
                 </div>
             </div>
         </div>
+
+        <div class="bg-contentCompany">
+            <div class="contentCompany">
+                <div class="contentCompanyFloat">
+                    <div class="ContentCompanyTxt">
+                        
+                        <h2>Website <br>Development <br>company</h2>
+                        <p class="txtCompany">
+                            com interface ilustrativa e base de dados com possiblidades <br> quase infinitas pode-se dizer que este e mas um passo <br> importante para os websites no futuro prospero e impetuoso.
+                        </p>
+                        <p class="txtCompanyCop">
+                            page found <span style="text-decoration: underline;">rounded</span>
+                        </p>
+                        <button>Ver as opcoes</button>
+                    </div>
+                </div>
+                <div class="imgCompany">
+                    <div class="img-company">
+                        <img src="./../assets/img/details-2.png" alt="Company img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        
      </main>
 
      <!-- Rodape  -->
-      <footer>
-
+     <footer>
+        <section class="sectionFooter">
+          <article class="articleFooter container">
+            <div class="divFooter">
+              <div class="logoFooter">
+                <a> <span>&aleph;</span> Algum Logo </a>
+                <p>
+                  Prazer eu estou disponivel 24Horas, ou seja, podes me <br />
+                  solicitar a qualquer hora para qualquer negocio.
+                </p>
+                <div class="linksFooter">
+                  <a href="#"><i class="bi bi-dropbox"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <div class="contactFooter">
+                <p><i class="bi bi-phone-fill"></i>+244 942613411</p>
+                <p>
+                  <i class="bi bi-envelope-at-fill"></i>LuisGomes.09a@hotmail.com
+                </p>
+                <p>
+                  <i class="bi bi-map-fill"></i> S R703 E #2345 Calemba2/. UT s345
+                </p>
+              </div>
+            </div>
+            <div class="company">
+              <div class="companyCopy">&copy; 2024 Company, inc</div>
+              <div class="companyText">
+                <a href="#" class="mainNav_link">Termos de uso</a>
+                <a href="#" class="mainNav_link">Politica de privacidade</a>
+                <a href="#" class="mainNav_link">Preferencia de cookies</a>
+              </div>
+            </div>
+          </article>
+        </section>
       </footer>
 </body>
 </html>

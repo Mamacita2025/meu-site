@@ -1,7 +1,7 @@
 @import url(./style.css);
 
-:root{
-    --txt-brad: #4e424c; 
+:root {
+    --txt-brad: #4e424c;
 }
 
 .gradient1 {
@@ -16,7 +16,7 @@
 
         & ul {
             display: flex;
-
+            list-style-type: none;
             & li {
                 width: 6px;
                 height: 6px;
@@ -40,7 +40,6 @@
     position: absolute;
     bottom: 20%;
     left: 3%;
-    width: 50%;
 
     & .btnLeft,
     & .btnRight {
@@ -68,6 +67,7 @@
     margin: 15px;
     width: 70%;
     display: none;
+
     & h2 {
         margin-bottom: 10px;
         color: #3b2338;
@@ -100,42 +100,49 @@
         color: #fff;
         transition: .5s;
     }
-    
+
 
 }
-.carousselContent.active{
+
+.carousselContent.active {
     display: block;
 }
 
 /* Content Main  */
-.bg-content{
+.bg-content {
     background-color: var(--terceary-color);
     padding: 100px 0;
 }
-.contentMain{
+
+.contentMain {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
     align-items: center;
-    & .aboutContent{
-        width: 35%;
+
+    & .aboutContent {
+        max-width: 45%;
         padding: 10px;
-        margin-left: 40px; 
+        margin-left: 40px;
         position: relative;
-        & .d-content{
-            h1{
+
+        & .d-content {
+            h1 {
                 color: var(--primary-color);
             }
-            & .leadMain{
+
+            & .leadMain {
                 margin: 20px 0;
                 color: var(--txt-brad);
             }
-            h3{
+
+            h3 {
                 margin-bottom: 20px;
                 color: var(--primary-color);
             }
         }
-        & .otherServic{
+
+        & .otherServic {
             right: 0;
             background-color: var(--primary-color);
             color: #fff;
@@ -144,9 +151,10 @@
             border-radius: 5px;
             width: 250px;
             margin-top: 70px;
-            & ul{
-                
-                & li{
+
+            & ul {
+
+                & li {
                     margin: 10px 0;
                     font-weight: 100;
                 }
@@ -154,13 +162,245 @@
         }
     }
 }
-.imgMainTxt{
-    color: var(--heading-color);
+
+.d-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.imgMain{
-    width: 500px;
-    & img{
+
+.imgMainTxt {
+    color: var(--heading-color);
+    word-break: break-all;
+}
+
+.imgMain {
+    max-width: 500px;
+
+    & img {
         width: 100%;
 
     }
+}
+
+/* estilos do bg-company  */
+.bg-contentCompany {
+    background-color: var(--primary-color);
+    padding: 50px 0;
+
+    & .contentCompany {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .contentCompanyFloat {
+            text-align: center;
+
+            & .ContentCompanyTxt {
+
+                & h2 {
+                    color: var(--heading-color);
+                    font-size: 2.6em;
+
+                }
+
+                & .txtCompany {
+                    margin: 15px 0;
+                    color: var(--terceary-color);
+                }
+
+                & .txtCompanyCop {
+                    color: var(--heading-color);
+                    margin-bottom: 15px;
+                }
+
+                & button {
+                    padding: 8px 12px;
+                    font-weight: bold;
+                    background-color: transparent;
+                    border: 1px solid var(--heading-color);
+                    border-radius: 4px;
+                    color: var(--terceary-color);
+                    cursor: pointer;
+                    transition: .5s;
+                }
+
+                & button:hover {
+                    color: rgb(54, 54, 54);
+                    background-color: #fff;
+                    transition: .5s;
+                }
+            }
+        }
+
+        & .imgCompany {
+            width: 40%;
+            margin-left: 60px;
+
+            & .img-company {
+                padding: 10px;
+                max-width: 600px;
+
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.resp {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .resp {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .otherBox {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .resp {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 718px) {
+
+    .contentMain,
+    .contentCompany {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .aboutContent,
+    .d-content,
+    h1,
+    p,
+    h3 {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .resp {
+        max-width: 960px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .otherBox {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .imgMain {
+        max-width: 300px;
+    }
+
+    .otherServic {
+        margin-top: 20px !important;
+    }
+
+    .bg-content {
+        padding-bottom: 200px !important;
+    }
+
+    .contentMain {
+        padding: 10px 20px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .resp {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .resp {
+        max-width: 1320px;
+    }
+}
+
+/* estilos de about us  */
+.aboutSection {
+    margin-top: 100px;
+
+    & .aboutTxt {
+        display: flex;
+
+        & .aboutImg {
+            color: var(--secondary-text-color);
+            line-height: 25px;
+            margin-left: 20px;
+            margin-top: 50px;
+
+            & .imgReset {
+                max-width: 50%;
+                float: right;
+                margin: 10px;
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    & .aboutContent {
+        border: 1px solid #cacaca;
+        padding: 40px 30px;
+        border-radius: 10px;
+
+        & *>p {
+            color: var(--secondary-text-color);
+            font-weight: 100;
+            line-height: 24px;
+        }
+
+        & .aboutContentTxt {
+
+            & h3,
+            & h2 {
+                font-size: 1.6em;
+                font-weight: 300;
+                color: #111;
+            }
+
+            & .trajeto,
+            & .proj_dealt,
+            & h2,
+            & .decList {
+                margin: 10px 0;
+            }
+
+            & .cursed,
+            & .decList {
+                color: var(--secondary-text-color);
+                line-height: 25px;
+            }
+
+
+
+        }
+    }
+}
+
+
+/* estilos do footer  */
+footer {
+    margin-top: 100px;
 }

@@ -1,0 +1,161 @@
+@import url(./style.css);
+
+header{
+  background-color: var(--primary-color);
+  margin-bottom: 100px;
+}
+
+/* estilos de Outros servicos  */
+.resp{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .resp{
+      max-width: 540px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .otherBox{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+  }
+  @media (min-width: 768px) {
+     .resp{
+      max-width: 720px;
+    }
+  }
+  @media screen and (max-width: 718px) {
+    .contentMain, .contentCompany{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .aboutContent, .d-content, h1, p, h3{
+        width: 100% !important;
+    }
+  }
+  @media (min-width: 992px) {
+    .resp{
+      max-width: 960px;
+    }
+    
+  }
+  @media screen and (max-width: 991px) {
+    .otherBox{
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .imgMain {
+        max-width: 300px;
+    }
+    .otherServic{
+        margin-top: 20px !important;
+    }
+    .bg-content{
+        padding-bottom: 200px !important;
+    }
+    .contentMain{
+        padding: 10px 20px !important;
+    }
+  }
+  @media (min-width: 1200px) {
+    .resp{
+      max-width: 1140px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .resp{
+      max-width: 1320px;
+    }
+  }
+.otherServices {
+    background-color: var(--terceary-color);
+    padding-top: 100px;
+    & .features {
+        text-align: center;
+
+        & .featuresTxt {
+            text-transform: uppercase;
+            font-weight: 100;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        & h2 {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        & .featuresContent {
+            margin-top: 30px;
+
+            & .featuresBox {
+                padding: 13px;
+
+
+                & .otherBox {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 25px;
+
+                    & .feBox {
+                        text-align: center;
+
+                        border-radius: 8px;
+                        border-bottom: 9px solid var(--primary-color);
+                        background-color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+
+                        & .feBoxImg {
+                            width: 130px;
+                            margin: 15px 0;
+
+
+                            & img {
+                                width: 100%;
+                            }
+                        }
+
+                        & h5 {
+                            color: var(--primary-color);
+                        }
+
+                        & p {
+                            margin: 8px 0;
+                            font-weight: 100;
+                            color: var(--secondary-text-color);
+                        }
+
+                        & button {
+                            background-color: var(--primary-color);
+                            margin: 13px 0;
+                            padding: 9px 19px;
+                            border-radius: 20px;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-weight: 300;
+                            cursor: pointer;
+                            transition: .5s;
+                        }
+
+                        & button:hover {
+                            background-color: var(--heading-color);
+                            color: var(--secondary-text-color);
+                            transition: .5s;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+

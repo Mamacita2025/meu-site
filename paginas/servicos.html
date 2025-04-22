@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicos</title>
+    <link rel="stylesheet" href="./../assets/css/servicos.css">
+    <link rel="stylesheet" href="./../assets/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+    
+        
+        <!-- OBS: este caecalho foi copiado apartir da pagina principal, e claro que isto pode ser feito dinamicamente com PHP!  -->
+        <div class="div-h-2 mainNav" style="position: sticky;">
+            <div class="slogan">
+             <div class="logo">
+                <img src="" alt="Img Logo">
+             </div>
+            </div>
+            <div class="btnDiv">
+              <button onclick="animar()" id="btn-menu">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+              </button>
+            </div>
+            <script>
+              function animar() {
+                const btn = document.getElementById("btn-menu");
+                const links = document.querySelector('.mainNav_links')
+                links.classList.toggle('active')
+                btn.classList.toggle("ativar");
+              }
+            </script>
+            <div class="mainNav_links" onclick="animar()">
+              <nav class="nav">
+                <ul>
+                  <li><a href="./../index.html" class="mainNav_link">Home</a></li>
+                  <li><a href="./sobre.html" class="mainNav_link">Sobre</a></li>
+                  <li><a href="./portfolio.html" class="mainNav_link">Portfolio</a></li>
+                  <li><a href="#" class="mainNav_link">team</a></li>
+                  <li><a href="./servicos.html" class="mainNav_link">Servicos</a></li>
+                  <li><a href="#" class="mainNav_link">Produtos</a></li>
+                  <li><a href="#" class="mainNav_link">Contacto</a></li>
+                  <a href="#" class="apoio">Apoie-nos</a>
+                </ul>
+              </nav>
+            </div>
+          </div>
+    </header>
+    
+    <main>
+        <div class="">
+            <!-- Outros servicos  -->
+            <section class="otherServices ">
+                <div class="features resp">
+                    <p class="featuresTxt">features</p>
+                    <h2>Our Features & Services</h2>
+                    <div class="featuresContent">
+                        <div class="featuresBox">
+                            
+                            <div class="otherBox">
+    
+                                <div class="feBox">
+                                    <div class="feBoxImg">
+                                        <img src="./../assets/img/hero-img.png" alt="">
+                                    </div>
+                                    <h5>SEO developments</h5>
+                                    <p>
+                                        Criacao e manutencao de sites optometricos <br>
+                                        claro, com uma boa referenciacao de <br>
+                                        consumidor
+                                    </p>
+                                    <button>Explorar</button>
+                                </div>
+    
+                                <div class="feBox">
+                                    <div class="feBoxImg">
+                                        <img src="./../assets/img/hero-img.png" alt="">
+                                    </div>
+                                    <h5>SEO developments</h5>
+                                    <p>
+                                        Criacao e manutencao de sites optometricos <br>
+                                        claro, com uma boa referenciacao de <br>
+                                        consumidor
+                                    </p>
+                                    <button>Explorar</button>
+                                </div>
+    
+                                <div class="feBox">
+                                    <div class="feBoxImg">
+                                        <img src="./../assets/img/hero-img.png" alt="">
+                                    </div>
+                                    <h5>SEO developments</h5>
+                                    <p>
+                                        Criacao e manutencao de sites optometricos <br>
+                                        claro, com uma boa referenciacao de <br>
+                                        consumidor
+                                    </p>
+                                    <button>Explorar</button>
+                                </div>
+    
+                                <div class="feBox">
+                                    <div class="feBoxImg">
+                                        <img src="./../assets/img/hero-img.png" alt="">
+                                    </div>
+                                    <h5>SEO developments</h5>
+                                    <p>
+                                        Criacao e manutencao de sites optometricos <br>
+                                        claro, com uma boa referenciacao de <br>
+                                        consumidor
+                                    </p>
+                                    <button>Explorar</button>
+                                </div>
+    
+                                <div class="feBox">
+                                    <div class="feBoxImg">
+                                        <img src="./../assets/img/hero-img.png" alt="">
+                                    </div>
+                                    <h5>SEO developments</h5>
+                                    <p>
+                                        Criacao e manutencao de sites optometricos <br>
+                                        claro, com uma boa referenciacao de <br>
+                                        consumidor
+                                    </p>
+                                    <button>Explorar</button>
+                                </div>
+    
+                                <div class="feBox">
+                                    <div class="feBoxImg">
+                                        <img src="./../assets/img/hero-img.png" alt="">
+                                    </div>
+                                    <h5>SEO developments</h5>
+                                    <p>
+                                        Criacao e manutencao de sites optometricos <br>
+                                        claro, com uma boa referenciacao de <br>
+                                        consumidor
+                                    </p>
+                                    <button>Explorar</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+             </section>
+        </div>
+    </main>
+
+    <footer>
+        <section class="sectionFooter">
+          <article class="articleFooter container">
+            <div class="divFooter">
+              <div class="logoFooter">
+                <a> <span>&aleph;</span> Algum Logo </a>
+                <p>
+                  Prazer eu estou disponivel 24Horas, ou seja, podes me <br />
+                  solicitar a qualquer hora para qualquer negocio.
+                </p>
+                <div class="linksFooter">
+                  <a href="#"><i class="bi bi-dropbox"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <div class="contactFooter">
+                <p><i class="bi bi-phone-fill"></i>+244 942613411</p>
+                <p>
+                  <i class="bi bi-envelope-at-fill"></i>LuisGomes.09a@hotmail.com
+                </p>
+                <p>
+                  <i class="bi bi-map-fill"></i> S R703 E #2345 Calemba2/. UT s345
+                </p>
+              </div>
+            </div>
+            <div class="company">
+              <div class="companyCopy">&copy; 2024 Company, inc</div>
+              <div class="companyText">
+                <a href="#" class="mainNav_link">Termos de uso</a>
+                <a href="#" class="mainNav_link">Politica de privacidade</a>
+                <a href="#" class="mainNav_link">Preferencia de cookies</a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </footer>
+</body>
+</html>
